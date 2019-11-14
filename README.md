@@ -39,9 +39,13 @@ from just looking at their profile
 
 ---
 
-## • Version 1.1 -- update
+## • Version 1.1 -- update soon
 
-* Email Recon + Information Gathering 
+* Add - Email Recon + Information Gathering
+
+* Name Change - Recon~X
+
+* The information includes:
 
 * Days From Creation, Security Reputation, Check Breaches, dmarc_enforced, valid mx, suspicious tld, deliverable, accept all, malicious activity, reference list ( where emails are used ).
 

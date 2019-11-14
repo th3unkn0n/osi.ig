@@ -39,6 +39,14 @@ from just looking at their profile
 
 ---
 
+## • Version 1.1 -- update
+
+* Email Recon + Information Gathering 
+
+* Days From Creation, Security Reputation, Check Breaches, dmarc_enforced, valid mx, suspicious tld, deliverable, accept all, malicious activity, reference list ( where emails are used ).
+
+---
+
 <p align="center">
   Follow Me On
 </p>

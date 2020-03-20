@@ -11,7 +11,7 @@
   </a>
 </p>
 <p align="center">
-  [!] curruntly not avilable [!]
+  [ ! ] curruntly not avilable [ ! ]
 </p>
 <p align="center">
   Open Source Information Instagram

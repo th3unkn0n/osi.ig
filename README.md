@@ -11,6 +11,9 @@
   </a>
 </p>
 <p align="center">
+  [!] curruntly not avilable [!]
+</p>
+<p align="center">
   Open Source Information Instagram
 </p>
 
@@ -25,7 +28,7 @@ from just looking at their profile
 
 ---
 
-## • How To Install ( Termux )
+## • How To Install
 
 `$ pkg install -y git python`
 
@@ -36,18 +39,6 @@ from just looking at their profile
 `$ chmod +x install.sh && ./install.sh`
 
 `$ python3 main.py`
-
----
-
-## • Version 1.1 -- update soon
-
-* Add - Email Recon + Information Gathering
-
-* Name Change - Recon~X
-
-* The information includes:
-
-* Days From Creation, Security Reputation, Check Breaches, dmarc_enforced, valid mx, suspicious tld, deliverable, accept all, malicious activity, reference list ( where emails are used ).
 
 ---
 

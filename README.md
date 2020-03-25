@@ -11,9 +11,6 @@
   </a>
 </p>
 <p align="center">
-  [ ! ] curruntly not avilable [ ! ]
-</p>
-<p align="center">
   Open Source Information Instagram
 </p>
 
@@ -24,21 +21,32 @@ from just looking at their profile
 
 * The information includes:
 
-* Username, Profile Name, URL, Followers, Following, Number of Posts, Bio, Profile Picture URL, Is Business Account ?, Connected to a FB account ?, External URL, Joined Recently ?, Business Category Name, Is private ?, Is Verified ?, Downloads Public Photos
+* [ profile ] : Username, Profile Name, URL, Followers, Following, Number of Posts, Bio, Profile Picture URL, Is Business Account ?, Connected to a FB account ?, External URL, Joined Recently ?, Business Category Name, Is private ?, Is Verified ?,
+
+* [ posts ] : accessability caption, location, timestamp, comments disabled, Caption, picture url
 
 ---
 
 ## • How To Install
 
-`$ pkg install -y git python`
+`$ pkg install -y git`
 
-`$ git clone https://github.com/th3unkn0n/osi.ig.git`
-
-`$ cd osi.ig`
+`$ git clone https://github.com/th3unkn0n/osi.ig.git && cd osi.ig`
 
 `$ chmod +x install.sh && ./install.sh`
 
-`$ python3 main.py`
+`$ python3 main.py -u username`
+
+`$ python3 main.py -h`
+`usage: main.py [-h] -u USERNAME [-p] [-s]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -u USERNAME, --username USERNAME
+                        username of account to scan
+  -p, --postscrap       scrape all uploaded images info
+  -s, --savedata        save data to file 
+                        ( save profile pic, info , post info )`
 
 ---
 

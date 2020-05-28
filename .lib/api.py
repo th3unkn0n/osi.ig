@@ -59,7 +59,7 @@ class main():
 
 	def get_profile(self):
 		extra.write(f"\n{gr}[+]{nu} getting profile ...")
-		profile = requests.get(f"https://www.instagram.com/{self.user}", headers={'User-Agent': random.choice(useragent)})
+		profile = requests.get(f"https://www.instagram.com/{self.user}", headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'})
 		soup = BeautifulSoup(profile.text, 'html.parser')
 		more_data = soup.find_all('script', attrs={'type': 'text/javascript'})
 		self.data = json.loads(more_data[3].get_text()[21:].strip(';'))

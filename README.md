@@ -59,6 +59,10 @@ from just looking at their profile
 
 `  -t, --tags            list often used tags`
 
+## • Update
+
+`$ git pull`
+
 ---
 
 <p align="center">

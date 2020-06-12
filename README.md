@@ -52,10 +52,12 @@ from just looking at their profile
 `  -u USERNAME, --username USERNAME`
 `                        username of account to scan`
 
-`  -p, --postscrap       scrape all uploaded images info`
+`  -p, --post            get all uploaded images info`
 
 `  -s, --savedata        save data to file `
 `                        ( save profile pic, info , post info )`
+
+`  -t, --tags            list often used tags`
 
 ---
 

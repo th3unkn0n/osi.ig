@@ -58,6 +58,13 @@ class main():
 		self.get_profile()
 
 	def get_profile(self):
+		if bs4.__version__ == '4.6.0':
+			pass
+		else:
+			print(f"\n{gr}[!] {nu}currunt verion of bs4 module isn't supported \n{gr}[+] {nu}Downgrading beautifulsoup")
+			os.system("python3 -m pip install beautifulsoup4==4.6.0")
+			os.execv('main.py', sys.argv)
+			
 		extra.write(f"\n{gr}[+]{nu} getting profile ...")
 		profile = requests.get(f"https://www.instagram.com/{self.user}", headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'})
 		soup = BeautifulSoup(profile.text, 'html.parser')

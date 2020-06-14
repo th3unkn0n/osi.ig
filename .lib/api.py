@@ -1,5 +1,6 @@
 #!/bin/env python3
 
+import bs4
 import time
 import json
 import random

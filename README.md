@@ -43,7 +43,7 @@ from just looking at their profile
 
 `$ python3 main.py -h`
 
-`usage: main.py [-h] -u USERNAME [-p] [-s]`
+`usage: main.py [-h] -u USERNAME [-p] [-s] [-t]`
 
 `optional arguments:`
 

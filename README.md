@@ -70,9 +70,9 @@ from just looking at their profile
 </p>
 <p align="center">
   <a href="https://youtube.com/theunknon">
-    <img src="https://www.iconsdb.com/icons/preview/black/youtube-4-xxl.png" width="40" height="40">
+    <img src="https://github.com/th3unkn0n/extra/blob/master/.img/yt.png" width="40" height="40">
   </a>
   <a href="https://instagram.com/th3unkn0n">
-    <img src="http://clipart-library.com/images_k/instagram-png-transparent/instagram-png-transparent-16.png" width="40" height="40">
+    <img src="https://github.com/th3unkn0n/extra/blob/master/.img/ig.png" width="40" height="40">
     </a>
 </p>

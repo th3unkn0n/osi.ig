@@ -112,32 +112,27 @@ class main():
 		extra.banner()
 		for key, value in self.output.items():
 			print(f"{gr}{key+(17-len(key))*' '} : {nu}{value}")
-		if self.tags == {}:
-			print(f"\n{gr}[+]{nu} no tags used by user\n")
-		else:
-			print("")
-			print(f"{gr}[+]{nu} most used user tags : \n")
-			o = 0
-			for key, value in collections.Counter(self.tags).most_common():
-				print(f"{gr}{key} : {nu}{value}")
-				o += 1
-				if o == 5:
-					break
-			print("")
+		print("")
+		print(f"{gr}[+]{nu} most used user tags : \n")
+		o = 0
+		for key, value in collections.Counter(self.tags).most_common():
+			print(f"{gr}{key} : {nu}{value}")
+			o += 1
+			if o == 5:
+				break
+		print("")
 
 	def print_data(self):
 		os.system("clear")
 		extra.banner()
 		for key, value in self.output.items():
 			print(f"{gr}{key+(17-len(key))*' '} : {nu}{value}")
-		if self.tags == {}:
-			print(f"\n{gr}[+]{nu} no tags used by user\n")
-		else:
-			print("")
-			print(f"{gr}[+]{nu} most used user tags : \n")
-			for key, value in collections.Counter(self.tags).most_common():
-				print(f"{gr}{key} : {nu}{value}")
-			print("")
+		print("")
+		print(f"{gr}[+]{nu} most used user tags : \n")
+		for key, value in collections.Counter(self.tags).most_common():
+			print(f"{gr}{key} : {nu}{value}")
+		print("")
+
 
 	def make_dir(self):
 		try:

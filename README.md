@@ -2,7 +2,6 @@
   <img src="https://raw.githubusercontent.com/th3unkn0n/OSI.IG/master/.lib/20191103_233944.jpg" width="300" height="120">
 </p>
 <p align="center">
-[ in development v2 ]
 </p>
 <p align="center"><img src="https://img.shields.io/badge/Version-1.2-brightgreen"></p>
 <p align="center">

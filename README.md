@@ -30,7 +30,7 @@ from just looking at their profile
 * [ email ] : if any email is used any where it'll be displayed
 
 * [ posts ] : accessability caption, location, timestamp, caption, picture url, etc
-* ( yet not working correctly with posts instagram marks as 'sensitive cotent' )  
+  * ( yet not working correctly with posts instagram marks as 'sensitive cotent' )  
 
 ---
 

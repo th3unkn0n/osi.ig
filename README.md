@@ -23,11 +23,13 @@ from just looking at their profile
 
 * The information includes:
 
-* [ profile ] : Username, Profile Name, URL, Followers, Following, Number of Posts, Bio, Profile Picture URL, Is Business Account ?, Connected to a FB account ?, External URL, Joined Recently ?, Business Category Name, Is private ?, Is Verified ?,
+* [ profile ] : user id, Followers, Following, Number of uploads, Bio, Profile Picture URL, Business enum, External URL, Joined Recently, etc
 
-* [ tags ] : most used , and by -t all used tags
+* [ tags & mentions ] : most used hashtags and mentioned accounts
 
-* [ posts ] : accessability caption, location, timestamp, comments disabled, Caption, picture url
+* [ email ] : if any email is used any where it'll be displayed
+
+* [ posts ] : accessability caption, location, timestamp, caption, picture url, etc
 
 ---
 
@@ -37,7 +39,7 @@ from just looking at their profile
 
 `$ git clone https://github.com/th3unkn0n/osi.ig.git && cd osi.ig`
 
-`$ chmod +x install.sh && ./install.sh`
+`$ python3 -m pip install requirements.txt`
 
 ## • Usage
 
@@ -45,21 +47,8 @@ from just looking at their profile
 
 `$ python3 main.py -h`
 
-`usage: main.py [-h] -u USERNAME [-p] [-s] [-t]`
+`-p, --post images info highlight`
 
-`optional arguments:`
-
-`  -h, --help            show this help message and exit`
-
-`  -u USERNAME, --username USERNAME`
-`                        username of account to scan`
-
-`  -p, --post            get all uploaded images info`
-
-`  -s, --savedata        save data to file `
-`                        ( save profile pic, info , post info )`
-
-`  -t, --tags            list often used tags`
 
 ## • Update
 

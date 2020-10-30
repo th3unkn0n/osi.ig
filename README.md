@@ -23,7 +23,7 @@ from just looking at their profile
 
 * The information includes:
 
-* [ profile ] : user id, Followers, Following, Number of uploads, Bio, Profile Picture URL, Business enum, External URL, Joined Recently, etc
+* [ profile ] : user id, followers / following, number of uploads, profile img URL, business enum, external URL, joined Recently, etc
 
 * [ tags & mentions ] : most used hashtags and mentioned accounts
 

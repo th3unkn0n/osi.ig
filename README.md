@@ -3,7 +3,7 @@
 </p>
 <p align="center">
 </p>
-<p align="center"><img src="https://img.shields.io/badge/Version-1.2-brightgreen"></p>
+<p align="center"><img src="https://img.shields.io/badge/Version-2.0-brightgreen"></p>
 <p align="center">
   <a href="https://github.com/th3unkn0n">
     <img src="https://img.shields.io/github/followers/th3unkn0n?label=Follow&style=social">

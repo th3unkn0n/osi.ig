@@ -1,5 +1,6 @@
 #!/bin/env python3
 
+import requests
 import sys, time
 import collections
 import re as r

@@ -80,7 +80,7 @@ def user_info(usrname):
 		'external url': js['external_url'],
 		'private': js['is_private'],
 		'verified': js['is_verified'],
-		'profile img': js['profile_pic_url_hd'],
+		'profile img': urlshortner(js['profile_pic_url_hd']),
 		'business account': js['is_business_account'],
 		#'connected to fb': js['connected_fb_page'],  -- requires login
 		'joined recently': js['is_joined_recently'],

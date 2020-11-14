@@ -27,13 +27,14 @@ def exinfo():
 
 	def xprint(xdict, text):
 		if xdict != {}:
-			print(f"{su} {wh}most used %s :" % text)
+			print(f"{su} {re}most used %s :" % text)
 			i = 0
 			for key, val in xdict.items():
-				print(f"  {gr}%s : {wh}%s" % (key, val))
+				print(f"  {gr}%s : {re}%s" % (key, val))
 				i += 1
 				if i > 4:
 					break
+			print()
 		else:
 			pass
 	
@@ -46,10 +47,12 @@ def exinfo():
 	if mail != []:
 		if len(mail) == 1:
 			print(f"{su} {re}email found : \n{gr}  %s" % mail[0])
+			print()
 		else:
 			print(f"{su} {re}email found : \n{gr}  ")
 			for x in range(len(mail)):
 				print(mail[x])
+			print()
 
 	xprint(tags, "tags")
 	xprint(ment, "mentions")

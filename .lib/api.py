@@ -30,7 +30,7 @@ def exinfo():
 			print(f"{su} {re}most used %s :" % text)
 			i = 0
 			for key, val in xdict.items():
-				print(f"  {gr}%s : {re}%s" % (key, val))
+				print(f"  {gr}%s : {wh}%s" % (key, val))
 				i += 1
 				if i > 4:
 					break

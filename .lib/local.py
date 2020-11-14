@@ -15,7 +15,11 @@ su = f"\033[1;31m[\033[1;36m+\033[1;31m]{nu}"
 fa = f"\033[1;31m[\033[1;31m!\033[1;31m]{nu}"
 er = f"\033[1;31m[\033[1;34m?\033[1;31m]{nu}"
 
-# 30-33, 48-50, 89-90
+# 30-33, 48-50, 94-96, 195-210
+
+def urlshortner(url):
+    data = requests.get("http://tinyurl.com/api-create.php?url=" + url)
+    return data.text
 
 def write(stri):
     for char in stri:

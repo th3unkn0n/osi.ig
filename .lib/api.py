@@ -3,9 +3,11 @@
 import requests
 import random
 import json
+import sys
 from local import *
 
 resp_js = None
+is_private = False
 total_uploads = 12
 
 def proxy_session():
@@ -59,12 +61,15 @@ def exinfo():
 	
 def user_info(usrname):
 
-	global total_uploads
+	global total_uploads, is_private
 	
 	resp_js = get_page(usrname)
 	js = json.loads(resp_js)
 	js = js['graphql']['user']
-
+	
+	if js['is_private'] != False:
+		is_private = True
+	
 	if js['edge_owner_to_timeline_media']['count'] > 12:
 		pass
 	else:
@@ -187,6 +192,10 @@ def highlight_post_info(i):
 	return postinfo
 
 def post_info():
+	
+	if is_private != False:
+		print(f"{fa} {gr}cannot use -p for private accounts !\n")
+		sys.exit(1)
 	
 	posts = []
 	

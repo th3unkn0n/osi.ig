@@ -22,12 +22,6 @@ def urlshortner(url):
     data = requests.get("http://tinyurl.com/api-create.php?url=" + url)
     return data.text
 
-def write(stri):
-    for char in stri:
-        time.sleep(0.1)
-        sys.stdout.write(char)
-        sys.stdout.flush()
-
 def sort_list(xlist):
     with_count = dict(collections.Counter(xlist))
     output = {k: v for k, v in sorted(with_count.items(), reverse=True, key=lambda item: item[1])}

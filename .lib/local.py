@@ -34,7 +34,6 @@ def find(stri):
 
     tags = r.findall(r"[＃#]{1}([_a-zA-Z0-9\.\+-]+)", stri)
     exinfo['tags'] = tags
-	
 	mention = []
     raw_mention = r.findall(r"[＠@]{1}([_a-zA-Z0-9\.\+-]+)", stri)
 	for x in raw_mention:

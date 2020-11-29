@@ -32,6 +32,9 @@ def exinfo():
 			print(f"{su} {re}most used %s :" % text)
 			i = 0
 			for key, val in xdict.items():
+				if len(mail) == 1:
+					if key in mail[0]:
+						continue
 				print(f"  {gr}%s : {wh}%s" % (key, val))
 				i += 1
 				if i > 4:

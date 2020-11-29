@@ -35,13 +35,18 @@ def sort_list(xlist):
     
 def find(stri):
     exinfo = {}
-    email = r.findall(r"[\w\.-]+@[\w\.-]+", stri)
+    email = r.findall(r"[_a-z0-9-\.]+[＠@]{1}[a-z0-9]+\.[a-z0-9]+", stri)
     exinfo['email'] = email
 
-    tags = r.findall(r"(?:^|\s)[＃#]{1}(\w+)", stri)
+    tags = r.findall(r"[＃#]{1}([_a-zA-Z0-9\.\+-]+)", stri)
     exinfo['tags'] = tags
-
-    mention = r.findall(r"(?:^|\s)[＠ @]{1}(\w+)", stri)
+	
+	mention = []
+    raw_mention = r.findall(r"[＠@]{1}([_a-zA-Z0-9\.\+-]+)", stri)
+	for x in raw_mention:
+        if x.endswith("."):
+            x = x.strip(".")
+        mention.append(x)
     exinfo['mention'] = mention
 
     return exinfo

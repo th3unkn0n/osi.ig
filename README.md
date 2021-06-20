@@ -54,17 +54,3 @@ from just looking at their profile
 ## • Update
 
 `$ git pull`
-
----
-
-<p align="center">
-  Follow Me On
-</p>
-<p align="center">
-  <a href="https://youtube.com/channel/UCnknCgg_3pVXS27ThLpw3xQ">
-    <img src="https://github.com/th3unkn0n/extra/blob/master/.img/yt.png" width="40" height="40">
-  </a>
-  <a href="https://twitter.com/th3unkn0n">
-    <img src="https://github.com/th3unkn0n/extra/blob/master/.img/tw.png" width="40" height="40">
-    </a>
-</p>

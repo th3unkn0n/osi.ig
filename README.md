@@ -18,6 +18,16 @@
 
 ---
 
+so recently ig started sending html response insted of json to "unknown" requests. 
+
+i REALLY wanted this to work without login since i don't use ig anymore, tried few ways i knew to get it working without login but it didn't work :/
+
+<p align="center"><img src="https://c.tenor.com/ujlv7g3-a7QAAAAC/pepo-sad-pepe.gif" width="100" height="100" /></p>
+
+anyways since lot of people are using this i will add a temporary login to get this working asap
+
+---
+
 * The Instagram OSINT Tool gets a range of information from an Instagram account that you normally wouldn't be able to get
 from just looking at their profile
 
@@ -27,7 +37,7 @@ from just looking at their profile
 
 * [ tags & mentions ] : most used hashtags and mentioned accounts
 
-* [ email ] : if any email is used any where it'll be displayed
+* [ email ] : if any email is used anywhere it'll be displayed
 
 * [ posts ] : accessability caption, location, timestamp, caption, picture url, etc
   * ( yet not working correctly with posts instagram marks as 'sensitive cotent' )  

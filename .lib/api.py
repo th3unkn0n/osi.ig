@@ -67,7 +67,7 @@ def user_info(usrname):
 	global total_uploads, is_private
 	
 	resp_js = get_page(usrname)
-	js = json.loads(resp_js)
+	js = json.loads(resp_js)  # maybe an HTML perser would fix the bug?
 	js = js['graphql']['user']
 	
 	if js['is_private'] != False:

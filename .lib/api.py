@@ -11,7 +11,7 @@ is_private = False
 total_uploads = 12
 
 def proxy_session():
-	session = requests.session()
+	session = requests.Session()
 	session.proxies = {
 		'http':  'socks5://127.0.0.1:9050',
 		'https': 'socks5://127.0.0.1:9050'
@@ -20,7 +20,7 @@ def proxy_session():
 
 def get_page(usrname):
 	global resp_js
-	session = requests.session()
+	session = requests.Session()  # api changed (https://docs.python-requests.org/en/latest/api#changes))
 	session.headers = {'User-Agent': random.choice(useragent)}
 	resp_js = session.get('https://www.instagram.com/'+usrname+'/?__a=1').text
 	return resp_js

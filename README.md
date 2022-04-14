@@ -36,7 +36,7 @@ from just looking at their profile
 
 ## • How To Install
 
-`$ pkg install -y git`
+### Using Python Venv
 
 `$ git clone https://github.com/th3unkn0n/osi.ig.git && cd osi.ig`
 
@@ -45,6 +45,10 @@ from just looking at their profile
 `$ source myenv/bin/activate`
 
 `$ python3 -m pip install -r requirements.txt`
+
+### Using Docker
+
+`$ docker run`
 
 ## • Usage
 

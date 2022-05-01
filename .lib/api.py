@@ -8,7 +8,7 @@ from local import *
 
 resp_js = None
 is_private = False
-total_uploads = 12
+total_uploads = 10
 
 def proxy_session():
 	session = requests.session()

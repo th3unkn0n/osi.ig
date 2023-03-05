@@ -13,7 +13,7 @@ args = vars(ap.parse_args())
 os.system("clear")
 
 if args['user']:
-	user_info(usrname=args["user"])
+	user_info(username=args["user"])
 
 if args['post']:
 	post_info()

@@ -62,53 +62,53 @@ def exinfo():
 	xprint(tags, "tags")
 	xprint(ment, "mentions")
 	
-def user_info(usrname):
+def user_info(username):
+    global total_uploads, is_private
 
-	global total_uploads, is_private
-	
-	resp_js = get_page(usrname)
-	js = json.loads(resp_js)
-	js = js['graphql']['user']
-	
-	if js['is_private'] != False:
-		is_private = True
-	
-	if js['edge_owner_to_timeline_media']['count'] > 12:
-		pass
-	else:
-		total_uploads = js['edge_owner_to_timeline_media']['count']
+    try:
+        response_json = get_page(username)
+        user_data = json.loads(response_json)['graphql']['user']
+    except json.JSONDecodeError as e:
+        print(f"Hata: JSON çözme hatası - {e}")
+        return
 
-	usrinfo = {
-		'username': js['username'],
-		'user id': js['id'],
-		'name': js['full_name'],
-		'followers': js['edge_followed_by']['count'],
-		'following': js['edge_follow']['count'],
-		'posts img': js['edge_owner_to_timeline_media']['count'],
-		'posts vid': js['edge_felix_video_timeline']['count'],
-		'reels': js['highlight_reel_count'],
-		'bio': js['biography'].replace('\n', ', '),
-		'external url': js['external_url'],
-		'private': js['is_private'],
-		'verified': js['is_verified'],
-		'profile img': urlshortner(js['profile_pic_url_hd']),
-		'business account': js['is_business_account'],
-		#'connected to fb': js['connected_fb_page'],  -- requires login
-		'joined recently': js['is_joined_recently'],
-		'business category': js['business_category_name'],
-		'category': js['category_enum'],
-		'has guides': js['has_guides'],
-	}
+    if user_data['is_private'] != False:
+        is_private = True
 
-	banner()
+    total_uploads = user_data['edge_owner_to_timeline_media']['count'] if user_data['edge_owner_to_timeline_media']['count'] > 12 else user_data['edge_owner_to_timeline_media']['count']
 
-	print(f"{su}{re} user info")
-	for key, val in usrinfo.items():
-		print(f"  {gr}%s : {wh}%s" % (key, val))
+    user_info_data = {
+        'username': user_data['username'],
+        'user id': user_data['id'],
+        'name': user_data['full_name'],
+        'followers': user_data['edge_followed_by']['count'],
+        'following': user_data['edge_follow']['count'],
+        'posts img': user_data['edge_owner_to_timeline_media']['count'],
+        'posts vid': user_data['edge_felix_video_timeline']['count'],
+        'reels': user_data['highlight_reel_count'],
+        'bio': user_data['biography'].replace('\n', ', '),
+        'external url': user_data['external_url'],
+        'private': user_data['is_private'],
+        'verified': user_data['is_verified'],
+        'profile img': urlshortner(user_data['profile_pic_url_hd']),
+        'business account': user_data['is_business_account'],
+        # 'connected to fb': user_data['connected_fb_page'],  -- requires login
+        'joined recently': user_data['is_joined_recently'],
+        'business category': user_data['business_category_name'],
+        'category': user_data['category_enum'],
+        'has guides': user_data['has_guides'],
+    }
 
-	print("")
+    banner()
 
-	exinfo()
+    print(f"{su}{re} User Info")
+    for key, val in user_info_data.items():
+        print(f"  {gr}{key.capitalize()}:{wh} {val}")
+
+    print("")
+
+    exinfo()
+
 
 def highlight_post_info(i):
 
